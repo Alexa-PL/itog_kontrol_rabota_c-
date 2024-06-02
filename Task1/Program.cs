@@ -40,23 +40,7 @@ class Program
             System.Console.WriteLine();
         }
 
-        string[] CreateArrayMaxThreeChars(string[] array) //Функция создания нового массива где элементы не длиннее 3 символов
-        {
-            string[] newArray = new string[originalArray.Length]; // Создаем новый массив такой же длины, как оригинальный
-            int newIndex = 0; // Инициализируем индекс для нового массива
 
-            // Формирование нового массива
-            foreach (string str in originalArray) // Перебираем каждый элемент оригинального массива
-            {
-                // Если длина строки <= 3 символов, добавляем в новый массив
-                if (str.Length <= 3) // Проверяем длину текущей строки
-                {
-                    newArray[newIndex] = str; // Добавляем строку в новый массив
-                    newIndex++; // Увеличиваем индекс нового массива для следующего элемента
-                }
-            }
-            return newArray; //возвращаем новый массив
-        }
     }
 
 }
