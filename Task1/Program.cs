@@ -20,6 +20,7 @@ class Program
 
         System.Console.WriteLine("Введите строку из слов, разделенных пробелами:");
         string input = Console.ReadLine(); // Получаем ввод от пользователя
+        string[] originalArray = input.Split(' '); // Разбиваем введенную строку на элементы массива по пробелам и сохраняем в массив
 
 
         PrintArray(originalArray); // Печать оригинального массива
