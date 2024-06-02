@@ -21,7 +21,7 @@ class Program
         System.Console.WriteLine("Введите строку из слов, разделенных пробелами:");
         string input = Console.ReadLine(); // Получаем ввод от пользователя
         string[] originalArray = input.Split(' '); // Разбиваем введенную строку на элементы массива по пробелам и сохраняем в массив
-
+        string[] newArray = CreateArrayMaxThreeChars(originalArray); // Создаем новый массив с помощью функции
 
         PrintArray(originalArray); // Печать оригинального массива
         PrintArray(newArray); // Печать нового массива
